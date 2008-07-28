@@ -1,0 +1,9 @@
+#!/bin/sh
+# This is 'git-cush' - kind of a mix between 'commit' and 'push'. This will
+# commit your added changes, and automatically push after. Handy, huh?
+
+# Place this in /usr/local/bin/git-cush (or wherever your git executable files
+# are installed).
+
+git commit
+git push
