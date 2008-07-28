@@ -4,7 +4,7 @@
 
 # This requires one parameter - the name of a remote branch to track.
 
-# Place this in /usr/local/git-track (or wherever your git executable files are
-# installed).
+# Place this in /usr/local/bin/git-track (or wherever your git executable files
+# are installed).
 
 git branch --track "$1" "origin/$1"
