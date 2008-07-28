@@ -1,0 +1,8 @@
+#!/bin/sh
+# This is 'git-nevermind' - it will remove all of your uncommitted changes.
+# Really just a way to not have to type so much each time.
+
+# Place this in /usr/local/git-nvm (or wherever your git executable files are
+# installed).
+
+git reset --hard HEAD
