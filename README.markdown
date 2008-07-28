@@ -12,5 +12,5 @@ It's pretty easy.. just a few steps.
 
 Credits
 -------
-* Code by Hans Engel <spam.me@engel.uk.to>
-* Supervision by evil kittens <evil@kitty.cat>
+* Code by Hans Engel (spam.me@engel.uk.to)
+* Supervision by evil kittens (evil@kitty.cat)
