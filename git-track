@@ -1,0 +1,10 @@
+#!/bin/sh
+# This is 'git-track' - it will set up a local branch which tracks a remote
+# one.
+
+# This requires one parameter - the name of a remote branch to track.
+
+# Place this in /usr/local/git-track (or wherever your git executable files are
+# installed).
+
+git branch --track "$1" "origin/$1"
