@@ -2,7 +2,7 @@
 # This shows you all of the files under revision control in the current
 # directory - like typing 'ls', but it only lists the ones that Git knows about.
 
-# Place this in /usr/local/bin/git-ls (or wherever you git executable files are
+# Place this in /usr/local/bin/git-ls (or wherever your git executable files are
 # installed).
 
 git ls-tree --name-only HEAD
