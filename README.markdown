@@ -2,6 +2,11 @@ Git Extras
 ==========
 Hey there! This is 'git-extras' - a little package of tools for git. They're nothing special - most of them just save you some typing and some time.
 
+Requirements
+------------
+* `git`. duh.
+* `sed`. this is used in `git-moveto`.
+
 Installation
 ------------
 It's pretty easy.. just a few steps.
