@@ -1,0 +1,24 @@
+#!/bin/sh
+# This is 'git-moveto' - a little script to move all of your modifications to a
+# different branch. This is useful if you forget to switch to a different branch
+# before making changes, because git won't let you checkout to a branch if you
+# have modifications.
+
+# Place this in /usr/local/bin/git-moveto (or wherever your git executable files
+# are installed).
+
+curbranch=`git branch | sed -e 's/\* //'`
+newbranch=$1
+testnew="$(git branch | sed -e 's/$newbranch')"
+
+if [ $? -e 1 ]; then
+	echo "New branch $newbranch does not exist."
+	exit 1
+fi
+
+git add .
+git commit -m 'git-moveto temporary commit'
+git checkout $newbranch
+git cherry-pick $curbranch
+git checkout $curbranch
+git reset --hard HEAD^
